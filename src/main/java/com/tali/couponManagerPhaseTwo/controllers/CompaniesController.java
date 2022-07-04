@@ -18,6 +18,7 @@ public class CompaniesController {
     public long createCompany(@RequestBody Company company) {
         long companyId = companiesLogic.createCompany(company);
         System.out.println(companyId);
+
         return companyId;
     }
 
